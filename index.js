@@ -34,9 +34,15 @@ const knex = require('knex')({
   });
 
 app.get("/", (req, res) => {
-    knex.select().from("surveydata").then( socialmedia => {
-        res.render("datatable", { mysmresults : socialmedia});
+    knex.select().from("surveydata").then( data => {
+        res.render("datatable", { mysmresults : data});
     })
+});
+
+app.post("/search", (req, res) => {
+  knex.select().from("surveydata").where( data => {
+      res.render("datatable", { mysmresults : data});
+  })
 });
 
 // app.post("/deleteCountry/:id", (req, res) => {
