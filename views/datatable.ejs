@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="../css/datatable1.css" />
+   <link rel="stylesheet" type="text/css" href="../css/datatable2.css" />
+   <title>Document</title>
+</head>
+<body>
+    <label><b>Country Information:</b></label>
+    <br><br>
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
+    <thead style="background-color: cornflowerblue; color: white;">
+      <tr>
+        <th>Time Stamp</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Population</th>
+        <th>Relationship Status</th>
+        <th>Occupation</th>
+        <th>University</th>
+        <th>Government</th>
+        <th>School</th>
+        <th>Company</th>
+        <th>Private</th>
+        <th>No Organization</th>
+        <th>Social Media Usage</th>
+        <th>Facebook</th>
+        <th>Twitter</th>
+        <th>Instagram</th>
+        <th>Youtube</th>
+        <th>Discord</th>
+        <th>Reddit</th>
+        <th>TikTok</th>
+        <th>Snapchat</th>
+        <th>Pinterest</th>
+        <th>Average Daily Use</th>
+        <th>Without Specific Purpose</th>
+        <th>While Busy</th>
+        <th>Restless</th>
+        <th>Distraction Level</th>
+        <th>Bothered By Worries</th>
+        <th>Concentration Difficulty</th>
+        <th>Comparison</th>
+        <th>Comparison Effect</th>
+        <th>Validation</th>
+        <th>Depression Level</th>
+        <th>Daily Interest</th>
+        <th>Sleep Issues</th>
+        <th>Locaiton</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+     <% for (let iCount = 0; iCount < mysmresults.length; iCount++) { %> 
+        <tr>
+          <td><%= mysmresults[iCount].id %></td> 
+          <td><%= mysmresults[iCount].surveytime %></td>
+          <td><%= mysmresults[iCount].age %></td>
+          <td><%= mysmresults[iCount].gender %></td>
+          <td><%= mysmresults[iCount].relationshipstatus %></td> 
+          <td><%= mysmresults[iCount].occupation %></td>
+          <td><%= mysmresults[iCount].university %></td>
+          <td><%= mysmresults[iCount].government %></td>
+          <td><%= mysmresults[iCount].school %></td> 
+          <td><%= mysmresults[iCount].company %></td>
+          <td><%= mysmresults[iCount].private %></td>
+          <td><%= mysmresults[iCount].orgnone %></td>
+          <td><%= mysmresults[iCount].socialmediausage %></td> 
+          <td><%= mysmresults[iCount].facebook %></td>
+          <td><%= mysmresults[iCount].twitter %></td>
+          <td><%= mysmresults[iCount].instagram %></td>
+          <td><%= mysmresults[iCount].youtube %></td> 
+          <td><%= mysmresults[iCount].discord %></td>
+          <td><%= mysmresults[iCount].reddit %></td>
+          <td><%= mysmresults[iCount].tiktok %></td>
+          <td><%= mysmresults[iCount].snapchat %></td> 
+          <td><%= mysmresults[iCount].pinterest %></td>
+          <td><%= mysmresults[iCount].averagedailyuse %></td>
+          <td><%= mysmresults[iCount].specificpurpose %></td>
+          <td><%= mysmresults[iCount].whilebusy %></td> 
+          <td><%= mysmresults[iCount].restless %></td>
+          <td><%= mysmresults[iCount].distractionlevel %></td>
+          <td><%= mysmresults[iCount].botheredbyworries %></td>
+          <td><%= mysmresults[iCount].concentrationdifficulty %></td> 
+          <td><%= mysmresults[iCount].comparison %></td>
+          <td><%= mysmresults[iCount].comparisoneffect %></td>
+          <td><%= mysmresults[iCount].validation %></td>
+          <td><%= mysmresults[iCount].depressionlevel %></td> 
+          <td><%= mysmresults[iCount].dailyinterest %></td>
+          <td><%= mysmresults[iCount].sleepissues %></td>
+          <td><%= mysmresults[iCount].location %></td>
+          <td style="text-align: center;">
+            <form action="/editCountry/<%= mysmresults[iCount].country_id %>" method="GET">
+              <button type="submit">Edit</button>
+            </form>
+          </td>
+          <td style="text-align: center;">
+            <form action="/deleteCountry/<%= mysmresults[iCount].country_id %>" method="POST">
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+     <% } %>
+    </tbody>
+  </table>
+  <br><br>
+  <form action="/addCountry" method="GET">
+    <button type="submit">Add Country</button>
+  </form>
+</body>
+</html>

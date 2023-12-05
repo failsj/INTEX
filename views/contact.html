@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Social Media and Mental Health </title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+
+        <style>
+            /* Styling the Body element i.e. Color, 
+            Font, Alignment */ 
+  
+            /* Styling the Form (Color, Padding, Shadow) */
+            form {
+                background-color: #fff;
+                max-width: 500px;
+                margin: 50px auto;
+                padding: 30px 20px;
+                box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+     
+            /* Styling form-control Class */
+            .form-control {
+                text-align: left;
+                margin-bottom: 25px;
+            }
+     
+            /* Styling form-control Label */ 
+            .form-control label {
+                display: block;
+                margin-bottom: 10px;
+            }
+     
+            /* Styling form-control input, 
+            select, textarea */
+            .form-control input,
+            .form-control select,
+            .form-control textarea {
+                border: 1px solid #777;
+                border-radius: 2px;
+                font-family: inherit;
+                padding: 10px;
+                display: block;
+                width: 95%;
+            }
+     
+            /* Styling form-control Radio 
+            button and Checkbox */
+            .form-control input[type="radio"],
+            .form-control input[type="checkbox"] {
+                display: inline-block;
+                width: auto;
+            }
+     
+            /* Styling Button */
+            button {
+                border: 1px solid #777;
+                border-radius: 2px;
+                font-family: inherit;
+                font-size: 21px;
+                display: block;
+                width: 100%;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+          <div class="container px-4 px-lg-5">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  Menu
+                  <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                      <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html" style="color: black;">Home</a></li>
+                      <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="login.html" style="color: black;">Login</a></li>
+                      <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html" style="color: black;">Survey</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      
+        <!-- Page Header-->
+        <!-- <header class="masthead" style="background-image: url('assets/img/contact-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Contact Me</h1>
+                            <span class="subheading">Have questions? I have answers.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> -->
+        <!-- Main Content-->
+        <h1>Mental Health Survey</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+
+       <!-- Gender  -->
+        <div class="form-control">
+            <label>
+                Gender
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Male</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">Female</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Preffer not to say</input>
+            </label>
+        </div>
+  
+              <!-- Gender  -->
+        <div class="form-control">
+            <label>
+                Gender
+            </label>
+
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Male</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">Female</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Preffer not to say</input>
+            </label>
+        </div>
+
+              <!-- Relationship Status  -->
+              <div class="form-control">
+                <label>
+                    Relationship Status
+                </label>
+    
+                <label for="recommed-1">
+                    <input type="radio"
+                           id="recommed-1"
+                           name="recommed">In a relationship</input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio"
+                           id="recommed-2"
+                           name="recommed">Single</input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio"
+                           id="recommed-3"
+                           name="recommed">Married</input>
+                </label>
+                <label for="recommed-4">
+                    <input type="radio"
+                           id="recommed-4"
+                           name="recommed">Divorced</input>
+                </label>
+            </div>
+
+              <!-- Occupation Status  -->
+              <div class="form-control">
+                <label>
+                    Occupation Status
+                </label>
+    
+                <label for="recommed-1">
+                    <input type="radio"
+                           id="recommed-1"
+                           name="recommed">Student</input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio"
+                           id="recommed-2"
+                           name="recommed">Worker</input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio"
+                           id="recommed-3"
+                           name="recommed">Retired</input>
+                </label>
+            </div>
+
+              <!-- Organization Affiliation  -->
+              <div class="form-control">
+                <label>
+                    What type of organizations are you affiliated with?
+                </label>
+    
+                <label for="recommed-1">
+                    <input type="radio"
+                           id="recommed-1"
+                           name="recommed">High School</input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio"
+                           id="recommed-2"
+                           name="recommed">University</input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio"
+                           id="recommed-3"
+                           name="recommed">Company</input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio"
+                           id="recommed-3"
+                           name="recommed">Goverment</input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio"
+                           id="recommed-3"
+                           name="recommed">Private</input>
+                </label>
+            </div>
+
+              <!-- Social Media Usage  -->
+              <div class="form-control">
+                <label>
+                    Do you use social media? 
+                </label>
+    
+                <label for="recommed-1">
+                    <input type="radio"
+                           id="recommed-1"
+                           name="recommed">Yes</input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio"
+                           id="recommed-2"
+                           name="recommed">No</input>
+                </label>
+            </div>
+
+        <!-- Social Media, select all -->
+        <div class="form-control">
+            <label>What social media platforms do you commonly use?
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Facebook</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Twitter</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Instagram</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">YouTube</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Snapchat</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">Discord</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Reddit</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Pinterest</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">TikTok</input></label>
+        </div>
+        
+        <!--  Hours dropdown  -->
+        <div class="form-control">
+            <label for="role" id="label-role">
+                What is the average time you spend on social media every day?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="hour0">Less than an hour</option>
+                <option value="hour1">Between 1 and 2 hours</option>
+                <option value="hour2">Between 2 and 3 hours</option>
+                <option value="hour3">Between 3 and 4 hours</option>
+                <option value="hour4">Between 4 and 5 hours</option>
+                <option value="hour5">More than 5 hours</option>
+            </select>
+        </div>
+  
+        <!-- 1 to 5 Questions -->
+<div class="mx-0 mx-sm-auto">
+    <div class="text-center">
+      <p>
+        <strong>How do you rate customer support</strong>
+      </p>
+    </div>
+  
+    <div class="text-center mb-3">
+      <div class="d-inline mx-3">
+        Bad
+      </div>
+  
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+          value="option1" />
+        <label class="form-check-label" for="inlineRadio1">1</label>
+      </div>
+  
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+          value="option2" />
+        <label class="form-check-label" for="inlineRadio2">2</label>
+      </div>
+  
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+          value="option3" />
+        <label class="form-check-label" for="inlineRadio3">3</label>
+      </div>
+  
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+          value="option4" />
+        <label class="form-check-label" for="inlineRadio4">4</label>
+      </div>
+  
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
+          value="option5" />
+        <label class="form-check-label" for="inlineRadio5">5</label>
+      </div>
+  
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6"
+          value="option6" />
+        <label class="form-check-label" for="inlineRadio6">6</label>
+  
+      </div>
+      <div class="d-inline me-4">
+        Excellent
+      </div>
+    </div>
+  </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+    </body>
+</html>
